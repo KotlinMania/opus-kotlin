@@ -1,0 +1,5 @@
+headers = stddef.h stdint.h opus_wrapper.h
+headerFilter = *
+compilerOpts = -Isrc/nativeInterop/cinterop
+staticLibraries = opus_wrapper.a
+noStringConversion = opus_errno
