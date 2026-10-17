@@ -6,7 +6,13 @@ import Opus
 struct OpusExportTests {
     @Test("Opus swift module imported cleanly")
     func testSwiftModuleLoads() throws {
-        #expect(Bool(true), "Opus swift module imported cleanly")
+        #expect(!version().isEmpty)
+        let encoder = Encoder.Companion.shared.new(
+            sampleRate: 48000,
+            channels: .Mono,
+            mode: .Audio
+        )
+        #expect(encoder.getSampleRate() == 48000)
     }
 }
 #elseif canImport(XCTest)
@@ -15,7 +21,13 @@ import Opus
 
 final class OpusExportTests: XCTestCase {
     func testSwiftModuleLoads() throws {
-        XCTAssertTrue(true, "Opus swift module imported cleanly")
+        XCTAssertFalse(version().isEmpty)
+        let encoder = Encoder.Companion.shared.new(
+            sampleRate: 48000,
+            channels: .Mono,
+            mode: .Audio
+        )
+        XCTAssertEqual(encoder.getSampleRate(), 48000)
     }
 }
 #endif

@@ -1,9 +1,9 @@
 {
   "targets": [
     {
-      "target_name": "ffi_native",
+      "target_name": "opus_native",
       "sources": [
-        "src/ffi_bindings.cpp"
+        "src/opus_bindings.cpp"
       ],
       "include_dirs": [
         "<!@(node -p \"require('node-addon-api').include\")"

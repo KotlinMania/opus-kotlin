@@ -1,5 +1,5 @@
 {
-  "name": "@kotlinmania/template-native-bindings",
+  "name": "@kotlinmania/opus-native-bindings",
   "version": "0.1.0",
   "description": "N-API C++ addon providing direct C bindings for Kotlin/JS and Kotlin/WASM targets",
   "main": "index.js",
