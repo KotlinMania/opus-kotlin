@@ -2,7 +2,7 @@
 
 Shared C++ N-API addon providing direct C library bindings for the project's
 Kotlin/JS and Kotlin/WASM targets. Transliterated from the libc-kotlin pattern
-(`/Volumes/stuff/Projects/kotlinmania/libc-kotlin/native/node-libc/`) and
+(`../libc-kotlin/native/node-libc/`) and
 generalized: the addon compiles into a reusable `.node` binary that both
 targets load.
 
